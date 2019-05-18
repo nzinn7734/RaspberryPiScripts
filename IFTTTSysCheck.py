@@ -2,8 +2,8 @@ import requests
 import subprocess
 import json
 
-EVENT = "SysCheck"
-IFTTT_URL = "https://maker.ifttt.com/trigger/{}/with/key/iOVeKS5WFdWerttNd3qeJ"
+EVENT = #Enter your event name here.
+IFTTT_URL = "https://maker.ifttt.com/trigger/{}/with/key/#Enter your key here"
 
 def getSysTemp():
     gpuTemp = subprocess.check_output(["/opt/vc/bin/vcgencmd", " measure_temp"]).decode()
