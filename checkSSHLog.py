@@ -2,7 +2,7 @@
 
 import os
 
-print("Please enter 1 for successful SSH attempts and 2 for unsuccessful SSH attempts.")
+print("Please enter 1 for unsuccessful SSH attempts and 2 for successful SSH attempts.")
 option = int(raw_input())
 if option == 1:
   os.system('cat /var/log/auth.log* | grep "Failed password"')
